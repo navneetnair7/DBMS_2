@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <style>
+        body{
+            background:url("../Images/roof.jpg");
+        }
+        body main{
+            display: flex;
+            justify-content: space-around;
+        }
+      body main form {
+        display: flex;
+        justify-content: space-around;
+        /* border: 2px solid sandybrown; */
+        flex-direction: column;
+        height: 70vh;
+        /* width: 40vw; */
+        align-items: center;
+        position: fixed;
+        top: 20vh;
+      }
+      body main form div{
+        display: flex;
+        flex-direction: column;
+      }
+      .spn{
+        font-size: xx-large;
+        font-weight: bolder;
+        margin: 2rem;
+      }
+      .slct{
+        padding: 1rem 1.2rem;
+        font-size: x-large;
+        font-weight: bold;
+        margin: 0.2rem 1.25rem;
+      }
+      .slct option{
+        text-align: center;
+      }
+      main form div select{
+        border: 3px solid rgb(94, 82, 82);
+        border-radius: 5px;
+        box-shadow: 2px 2px gray;
+      }
+      #submit{
+        padding: 10px 20px;
+        margin: 2rem 10rem;
+        font-size: large;
+        /* font-family: cursive; */
+        border: 2px solid rgb(94, 82, 82);
+        border-radius: 5px;
+        box-shadow: 2px 2px gray;
+      }
+      #submit:hover{
+        cursor: pointer;
+        background-color: whitesmoke;
+      }
+      .slct:hover{
+        cursor: pointer;
+        background-color: whitesmoke;
+
+      }
+      main form div span{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="/shop" method = "post">
+        <div>
+          <span class="spn">Model</span>
+          <select name="model" id="selectmodel" class="slct">
+            <option value="models">Model X</option>
+            <option value="model3">Model 3</option>
+            <option value="modelx">Model S</option>
+          </select>
+        </div>
+        <div>
+          <span class="spn">Color</span>
+          <select name="color" id="selectcolor" class="slct">
+            <option value="blue">Blue</option>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+          </select>
+        </div>
+        <button type="submit" id="submit">
+      </form>
+    </main>
+  </body>
+</html>
